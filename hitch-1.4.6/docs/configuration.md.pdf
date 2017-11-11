@@ -1,0 +1,883 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 4 0 R /F3 5 0 R /F4 7 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /A << /S /URI /Type /Action /URI (https://mozilla.github.io/server-side-tls/ssl-config-generator/) >> /Border [ 0 0 0 ] /Rect [ 62.69291 429.0236 326.0729 441.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+4 0 obj
+<< /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /Annots [ 3 0 R ] /Contents 14 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 13 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+7 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
+endobj
+8 0 obj
+<< /A << /S /URI /Type /Action /URI (https://ocsp.example.com) >> /Border [ 0 0 0 ] /Rect [ 123.13 420.0236 239.7271 432.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+9 0 obj
+<< /Annots [ 8 0 R ] /Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 13 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+10 0 obj
+<< /Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 13 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
+endobj
+11 0 obj
+<< /Outlines 17 0 R /PageLabels 18 0 R /PageMode /UseNone /Pages 13 0 R /Type /Catalog >>
+endobj
+12 0 obj
+<< /Author () /CreationDate (D:20160923134419-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20160923134419-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title () /Trapped /False >>
+endobj
+13 0 obj
+<< /Count 3 /Kids [ 6 0 R 9 0 R 10 0 R ] /Type /Pages >>
+endobj
+14 0 obj
+<< /Length 8341 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 753.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (# Configuring Hitch) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 735.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Hitch can be configured either from command line arguments or from a configuration file on disk.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 705.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 3.439983 Tw (You can extract the usage description by invoking Hitch with the "--help" argument. An example) Tj T* 0 Tw (configuration file is included in the distribution.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 687.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (In general Hitch is a protocol agnostic proxy and does not need much configuration.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 669.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (List of configuration items to consider:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+Q
+q
+1 0 0 1 62.69291 591.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 66 cm
+Q
+q
+1 0 0 1 20 66 cm
+Q
+q
+1 0 0 1 20 54 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PEM files with key and certificate.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 36 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Listening addresses and ports. Note the semi-odd square brackets for IPv4 addresses.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 30 cm
+Q
+q
+1 0 0 1 20 18 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Which backend servers to proxy towards, and if PROXY protocol should be used.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Number of workers, usually 1. For larger setups, use one worker per core.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 591.0236 cm
+Q
+q
+1 0 0 1 62.69291 573.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (If you need to support legacy clients, you can consider:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 567.0236 cm
+Q
+q
+1 0 0 1 62.69291 531.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 30 cm
+Q
+q
+1 0 0 1 20 30 cm
+Q
+q
+1 0 0 1 20 18 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Enable SSLv3 with "--ssl" \(despite RFC7568.\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Use weaker ciphers.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 531.0236 cm
+Q
+q
+1 0 0 1 62.69291 513.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (## Specifying ciphers) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 495.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (The recommended default is:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 489.0236 cm
+Q
+q
+1 0 0 1 62.69291 477.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ("EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH") Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 477.0236 cm
+Q
+q
+1 0 0 1 62.69291 459.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (If you need to support legacy clients, consider the "HIGH" cipher group.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 417.0236 cm
+q
+BT 1 0 0 1 0 26 Tm 4.527045 Tw 12 TL /F1 10 Tf 0 0 0 rg (Hitch cipher list string format is identical to that of other servers, so you can use tools like) Tj T* 0 Tw 2.189974 Tw 0 0 .501961 rg (https://mozilla.github.io/server-side-tls/ssl-config-generator/ ) Tj 0 0 0 rg (to generate a set of ciphers that suits your) Tj T* 0 Tw (needs.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 399.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Normally you do not have to change this.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 381.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (## Run environment) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 351.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 1.44311 Tw 12 TL /F1 10 Tf 0 0 0 rg (If you're handling a large number of connections, you'll probably want to raise ) Tj /F2 10 Tf 0 0 0 rg (ulimit -n ) Tj /F1 10 Tf 0 0 0 rg (before running) Tj T* 0 Tw (Hitch.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 321.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 1.260988 Tw 12 TL /F1 10 Tf 0 0 0 rg (If you are listening to ports under 1024 \(443 comes to mind\), you need to start Hitch as root. In those) Tj T* 0 Tw (cases you ) Tj /F2 10 Tf (must ) Tj /F1 10 Tf (use --user/-u to set a non-privileged user ) Tj /F2 10 Tf 0 0 0 rg (hitch ) Tj /F1 10 Tf 0 0 0 rg (can setuid\(\) to.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 303.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (## Preparing PEM files) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 285.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PEM files should contain the key file, the certificate from the CA and any intermediate CAs needed.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 279.0236 cm
+Q
+q
+1 0 0 1 62.69291 267.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ($ cat example.com.key example.com.crt intermediate.pem > example.com.pem) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 267.0236 cm
+Q
+q
+1 0 0 1 62.69291 237.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .01528 Tw (If you want to use Diffie-Hellman based ciphers for Perfect Forward Secrecy \(PFS\), you need to add some) Tj T* 0 Tw (parameters for that as well:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 231.0236 cm
+Q
+q
+1 0 0 1 62.69291 219.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ($ openssl dhparam -rand - 2048 >) Tj (> example.com.pem) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 219.0236 cm
+Q
+q
+1 0 0 1 62.69291 201.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Hitch will complain and disable DH unless these parameters are available.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 183.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (## Automatic OCSP staple retrieval) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 165.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Hitch has support for automated retrieval of OCSP responses from an OCSP responder.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 147.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (To set this up, specify the following setting in your configuration file:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 141.0236 cm
+Q
+q
+1 0 0 1 62.69291 129.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ocsp-dir = "/var/lib/hitch-ocsp") Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 129.0236 cm
+Q
+q
+1 0 0 1 62.69291 111.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (This can also be configured via the command line option ) Tj /F3 10 Tf 0 0 0 rg (--ocsp-dir=mydir) Tj /F1 10 Tf 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 81.02362 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 3.015984 Tw (If the loaded certificate contains an OCSP responder address and it also has the required issuer) Tj T* 0 Tw (certificate as part of its chain, Hitch will automatically retrieve and refresh OCSP staples.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+15 0 obj
+<< /Length 7281 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .327485 Tw 12 TL /F1 10 Tf 0 0 0 rg (The ) Tj /F2 10 Tf 0 0 0 rg (ocsp-dir ) Tj /F1 10 Tf 0 0 0 rg (directory must be read/write accessible by the configured hitch user, and should not be read) Tj T* 0 Tw (or write accessible by any other user.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.091163 Tw (The staples are fetched asynchronously, and will be loaded and ready for stapling as soon as they are) Tj T* 0 Tw (available.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 681.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .153976 Tw 12 TL /F1 10 Tf 0 0 0 rg (The variables ) Tj /F3 10 Tf 0 0 0 rg (ocsp-connect-tmo ) Tj /F1 10 Tf 0 0 0 rg (and ) Tj /F3 10 Tf 0 0 0 rg (ocsp-resp-tmo ) Tj /F1 10 Tf 0 0 0 rg (controls respectively the connect timeout and) Tj T* 0 Tw (fetch transmission timeout when Hitch is talking to an OCSP responder.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (## Verification of OCSP staples) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 645.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Hitch will optionally verify the OCSP staple, this can be done by specifying) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 639.0236 cm
+Q
+q
+1 0 0 1 62.69291 627.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ocsp-verify-staple = on) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 627.0236 cm
+Q
+q
+1 0 0 1 62.69291 609.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (in the configuration file.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 543.0236 cm
+q
+BT 1 0 0 1 0 50 Tm 3.41811 Tw 12 TL /F1 10 Tf 0 0 0 rg (If you are running with a custom CA, the verification certificates can be changed by setting the) Tj T* 0 Tw .37816 Tw /F2 10 Tf 0 0 0 rg (SSL_CERT_FILE ) Tj /F1 10 Tf 0 0 0 rg (or ) Tj /F2 10 Tf 0 0 0 rg (SSL_CERT_DIR ) Tj /F1 10 Tf 0 0 0 rg (environment variables. ) Tj /F2 10 Tf 0 0 0 rg (SSL_CERT_FILE ) Tj /F1 10 Tf 0 0 0 rg (can point to a single pem) Tj T* 0 Tw 2.797126 Tw (file containing a chain of certificates, while the ) Tj /F2 10 Tf 0 0 0 rg (SSL_CERT_DIR ) Tj /F1 10 Tf 0 0 0 rg (can be a comma-separated list of) Tj T* 0 Tw .995868 Tw (directories containing pem file with symlinks by their hash key \(see the man page of c_rehash from the) Tj T* 0 Tw (OpenSSL library for more information\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 525.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (## OCSP stapling from manually pre-loaded files) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 483.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL .701751 Tw (Hitch also has support for stapling of OCSP responses loaded from files on disk. If configured, Hitch will) Tj T* 0 Tw 1.614692 Tw (include a stapled OCSP response as part of the handshake when it receives a status request from a) Tj T* 0 Tw (client.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 453.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 2.609318 Tw 12 TL /F1 10 Tf 0 0 0 rg (Retrieving an OCSP response suitable for use with Hitch can be done using the following ) Tj /F2 10 Tf 0 0 0 rg (openssl) Tj T* 0 Tw /F1 10 Tf 0 0 0 rg (command:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 447.0236 cm
+Q
+q
+1 0 0 1 62.69291 408.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL ($ openssl ocsp) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 14 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+BT 1 0 0 1 0 14 Tm 3.217109 Tw 12 TL /F1 10 Tf 0 0 0 rg (-url ) Tj 0 0 .501961 rg (https://ocsp.example.com ) Tj 0 0 0 rg (-header Host ocsp.example.com -no_nonce -resp_text -issuer) Tj T* 0 Tw (issuer.pem -cert mycert.pem -respout ocspresp.der) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 408.0236 cm
+Q
+q
+1 0 0 1 62.69291 390.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (This will produce a DER-encoded OCSP response which can then be loaded by Hitch.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 372.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (The URL of the OCSP responder can be retrieved via) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 366.0236 cm
+Q
+q
+1 0 0 1 62.69291 354.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ($ openssl x509 -ocsp_uri -in mycert.pem -noout) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 354.0236 cm
+Q
+q
+1 0 0 1 62.69291 324.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .17881 Tw 12 TL /F1 10 Tf 0 0 0 rg (the ) Tj /F2 10 Tf 0 0 0 rg (-issuer ) Tj /F1 10 Tf 0 0 0 rg (argument needs to point to the OCSP issuer certificate. Typically this is the same certificate as) Tj T* 0 Tw (the intermediate that signed the server certificate.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 294.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 1.423318 Tw 12 TL /F1 10 Tf 0 0 0 rg (To configure Hitch to use the OCSP staple, use the following incantation when specifying the ) Tj /F2 10 Tf 0 0 0 rg (pem-file) Tj T* 0 Tw /F1 10 Tf 0 0 0 rg (setting in your Hitch configuration file:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 288.0236 cm
+Q
+q
+1 0 0 1 62.69291 243.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL (pem-file = {) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 18 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (cert = "mycert.pem" ocsp-resp-file = "mycert-ocsp.der") Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 243.0236 cm
+Q
+q
+1 0 0 1 62.69291 225.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (## ALPN/NPN support) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 195.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .11811 Tw (Hitch supports both the ALPN and the NPN TLS extension. This allows negotiation of the application layer) Tj T* 0 Tw (protocol that is to be used.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 177.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (This is useful if Hitch terminates TLS for HTTP/2 traffic.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 159.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (To turn this on, you must supply an ) Tj /F2 10 Tf 0 0 0 rg (alpn-protos ) Tj /F1 10 Tf 0 0 0 rg (setting in the configuration file:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 153.0236 cm
+Q
+q
+1 0 0 1 62.69291 141.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (alpn-protos = "h2,http/1.1") Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 141.0236 cm
+Q
+q
+1 0 0 1 62.69291 111.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .369987 Tw 12 TL /F1 10 Tf 0 0 0 rg (If the PROXY protocol is enabled \() Tj /F2 10 Tf 0 0 0 rg (write-proxy = on) Tj /F1 10 Tf 0 0 0 rg (\), Hitch will transmit the selected protocol as part of its) Tj T* 0 Tw (PROXY header.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 93.02362 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (## SSL/TLS protocol setting) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+16 0 obj
+<< /Length 2697 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 729.0236 cm
+q
+BT 1 0 0 1 0 26 Tm .536303 Tw 12 TL /F1 10 Tf 0 0 0 rg (Hitch supports TLS \(1.0, 1.1 and 1.2\) and SSL 3. By default, only TLS versions 1.1 and 1.2 are enabled,) Tj T* 0 Tw .074987 Tw (while TLS 1.0 and SSLv3 are disabled. The recommended way to to select protocols is to use ) Tj /F2 10 Tf 0 0 0 rg (tls-protos ) Tj /F1 10 Tf 0 0 0 rg (in) Tj T* 0 Tw (the configuration file:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 723.0236 cm
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (tls-protos = TLSv1.1 TLSv1.2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+Q
+q
+1 0 0 1 62.69291 693.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (The following tokens are available for the ) Tj /F2 10 Tf 0 0 0 rg (tls-protos ) Tj /F1 10 Tf 0 0 0 rg (option: ) Tj /F2 10 Tf 0 0 0 rg (SSLv3) Tj /F1 10 Tf 0 0 0 rg (, ) Tj /F2 10 Tf 0 0 0 rg (TLSv1.0) Tj /F1 10 Tf 0 0 0 rg (, ) Tj /F2 10 Tf 0 0 0 rg (TLSv1.1 ) Tj /F1 10 Tf 0 0 0 rg (and ) Tj /F2 10 Tf 0 0 0 rg (TLSv1.2) Tj /F1 10 Tf 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 675.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (## Uninterrupted configuration reload) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 657.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Issuing a SIGHUP signal to the main Hitch process will initiate a reload of Hitch's configuration file.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 627.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 2.533314 Tw 12 TL /F1 10 Tf 0 0 0 rg (Adding, updating and removing PEM files \() Tj /F3 10 Tf 0 0 0 rg (pem-file) Tj /F1 10 Tf 0 0 0 rg (\) and frontend listen endpoints \() Tj /F3 10 Tf 0 0 0 rg (frontend) Tj /F1 10 Tf 0 0 0 rg (\) is) Tj T* 0 Tw (currently supported.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 597.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .305777 Tw (Hitch will load the new configuration in its main process, and spawn a new set of child processes with the) Tj T* 0 Tw (new configuration in place if successful.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 567.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .074987 Tw (The previous set of child processes will finish their handling of any live connections, and exit after they are) Tj T* 0 Tw (done.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 537.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.028221 Tw (If the new configuration fails to load, an error message will be written to syslog. Operation will continue) Tj T* 0 Tw (without interruption with the current set of worker processes.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+17 0 obj
+<< /Count 0 /Type /Outlines >>
+endobj
+18 0 obj
+<< /Nums [ 0 19 0 R 1 20 0 R 2 21 0 R ] >>
+endobj
+19 0 obj
+<< /S /D /St 1 >>
+endobj
+20 0 obj
+<< /S /D /St 2 >>
+endobj
+21 0 obj
+<< /S /D /St 3 >>
+endobj
+xref
+0 22
+0000000000 65535 f
+0000000075 00000 n
+0000000139 00000 n
+0000000249 00000 n
+0000000467 00000 n
+0000000585 00000 n
+0000000693 00000 n
+0000000920 00000 n
+0000001035 00000 n
+0000001212 00000 n
+0000001439 00000 n
+0000001649 00000 n
+0000001758 00000 n
+0000002020 00000 n
+0000002096 00000 n
+0000010494 00000 n
+0000017832 00000 n
+0000020586 00000 n
+0000020636 00000 n
+0000020698 00000 n
+0000020735 00000 n
+0000020772 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(j\235\(\377}1B\312\361\235\262\222G\321~\003) (j\235\(\377}1B\312\361\235\262\222G\321~\003)]
+ /Info 12 0 R /Root 11 0 R /Size 22 >>
+startxref
+20809
+%%EOF

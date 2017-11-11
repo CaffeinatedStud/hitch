@@ -1,0 +1,317 @@
+.\" Man page generated from reStructuredText.
+.
+.TH HITCH.CONF 5 "" "" ""
+.SH NAME
+Hitch.conf \- Configuration file for Hitch
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH DESCRIPTION
+.sp
+hitch.conf is the configuration file for \fIhitch(8)\fP\&. The configuration
+file is loaded using the Hitch option \-\-config=, and can thus have
+different names and can exist in different locations.
+.sp
+Almost all options available in hitch.conf can be specified or
+overridden in the command line of Hitch, as described in hitch(8).
+.sp
+The Hitch configuration file consists of a series of option
+assignments.  Some options (pem\-file, frontend) can be be set several
+times, and the effect is that multiple certificate files and
+"listening frontends" are defined. Other options can only be assigned
+once.
+.sp
+The hash mark, or pound sign ("#"), is used as a "comment"
+character. You can use it to annotate your config file. All text after
+the comment character to the end of the line is ignored. Empty lines
+are ignored.
+.SH OPTIONS
+.sp
+Options can either be in the top level of the configuration file
+(global scope), or inside a \fIfrontend block\fP\&. Options inside a
+frontend block only affect the frontend, while options in the top
+level sets defaults for all frontends.
+.sp
+Unless otherwise noted below, options can only be used in the top
+level.
+.SS alpn\-protos = <protocol\-list>
+.sp
+Comma separated list of protocols supported by the backend in a quoted
+string. The list is used select protocols when the client supports
+Next Protocol Negotiation (NPN) or Application\-Layer Protocol
+Negotiation (ALPN). If Hitch is compiled against a OpenSSL version
+that does not support ALPN, only NPN will be used to select a
+protocol.
+.sp
+The result of the NPN/ALPN negotiation will be communicated to the
+backend if and only if write\-proxy\-v2 or proxy\-proxy is used. For
+HTTP/2 to work with modern browsers, ALPN negotiation is required.
+.SS backend = "[HOST]:PORT"
+.sp
+The host and port Hitch connects to when receiving a connection. Only
+a single backend is supported.
+.SS backlog = <number>
+.sp
+Listen backlog size
+.SS chroot = <string>
+.sp
+Chroot directory
+.SS ciphers = ...
+.sp
+List of ciphers to use in the secure communication. Refer to the
+OpenSSL documentation for a complete list of supported ciphers.
+.sp
+If not specified, OpenSSL will allow all ciphers. System
+administrators are advised to either only support strong ciphers (as in
+the example file below) or to pay close attention to security advisories
+related OpenSSL\(aqs ciphers.
+.sp
+This option is also available in frontend blocks.
+.SS daemon = on|off
+.sp
+Run as daemon. Default is off.
+.SS frontend = ...
+.sp
+This specifies the port and interface (the \fIlisten endpoint\fP) that
+Hitch binds to when listening for connections. It is possible define
+several frontends, and Hitch will bind to several ports and/or several
+interfaces.
+.sp
+If "*" is used as the host, then Hitch will bind on all interfaces for
+the given port.
+.sp
+A frontend can be specified either in a single line:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+frontend = "[HOST]:PORT[+CERT]"
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Or in a \fIfrontend block\fP:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+frontend = {
+    host = "HOST"
+    port = "PORT"
+    <other frontend options>
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS group = <string>
+.sp
+If given, Hitch will change to this group after binding to listen
+sockets.
+.SS keepalive = <number>
+.sp
+Number of seconds a TCP socket is kept alive
+.SS ocsp\-dir = <string>
+.sp
+Directory where Hitch will store and read OCSP responses for
+stapling. Default is "/var/lib/hitch/".
+.sp
+Directory must be readable and writable for the configured Hitch user, or
+automatic retrieval and updating of OCSP responses will not take place.
+.sp
+If you have a manually pre\-loaded OCSP staple, an alternative
+pem\-file syntax can be used for stapling:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+pem\-file = {
+    cert = "mycert.pem"
+    ocsp\-resp\-file = "ocsp\-resp.der"
+}
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS ocsp\-connect\-tmo = <number>
+.sp
+OCSP fetch connect timeout.
+.sp
+This does normally not need to be changed.
+.sp
+Default is 4.0 seconds.
+.SS ocsp\-resp\-tmo = <number>
+.sp
+OCSP fetch response timeout.
+.sp
+This does normally not need to be changed.
+.sp
+Default is 10 seconds.
+.SS ocsp\-verify\-staple = on|off
+.sp
+If set, OCSP responses will be verified against the certificate
+after retrieval.
+.sp
+Default is off.
+.SS pem\-file = <string>
+.sp
+Specify a SSL x509 certificate file. Server Name Indication (SNI) is
+supported by using one certificate file per SNI name.
+.sp
+Certificates are used in the order they are listed; the last
+certificate listed will be used if none of the others match.
+.sp
+A file suitable for Hitch is a concatenation of a private key and a
+corresponding certificate or certificate chain.
+.sp
+At least one PEM file is needed for Hitch to start, but it can be
+supplied on the command line.
+.sp
+This option is also available in a frontend declaration, to make a
+certificate only available for a specific listen endpoint.
+.SS prefer\-server\-ciphers = on|off
+.sp
+Turns on or off enforcement of the cipher ordering set in Hitch.
+.sp
+This option is also available in frontend blocks.
+.sp
+Default is off.
+.SS proxy\-proxy = on|off
+.sp
+Proxy an existing PROXY protocol header through this request. At the
+moment this is equivalent to write\-proxy\-v2.
+.sp
+This option is mutually exclusive with option write\-proxy\-v2, write\-ip
+and write\-proxy\-v1.
+.sp
+Default is off.
+.SS quiet = on|off
+.sp
+If quiet is turned on, only error messages will be shown.
+.SS tls\-protos = ...
+.sp
+The SSL/TLS protocols to be used. This is an unquoted list of
+tokens. Available tokens are SSLv3, TLSv1.0, TLSv1.1 and TLSv1.2.
+.sp
+The default is TLSv1.1 and TLSv1.2.
+.sp
+There are two deprecated options, ssl= and tls=, that also select
+protocols. If "ssl=on" is used, then all protocols are selected. This
+is known to be insecure, and is strongly discouraged. If "tls=on" is
+used, the three TLS protocol versions will be used. Turning on SSLv3
+and TLSv1.0 is not recommended \- support for these protocols are only
+kept for backwards compatibility.
+.sp
+This option is also available in frontend blocks.
+.SS sni\-nomatch\-abort = on|off
+.sp
+Abort handshake when the client submits an unrecognized SNI server name.
+.sp
+This option is also available in a frontend declaration.
+.SS ssl\-engine = <string>
+.sp
+Set the SSL engine. This is used with SSL accelerator cards. See the
+OpenSSL documentation for legal values.
+.SS syslog = on|off
+.sp
+Send messages to syslog. Default is off.
+.SS syslog\-facility = <string>
+.sp
+Set the syslog facility. Default is "daemon".
+.SS user = <string>
+.sp
+User to run as. If Hitch is started as root, it will insist on
+changing to a user with lower rights after binding to sockets.
+.SS workers = <number>
+.sp
+Number of worker processes. One per CPU core is recommended.
+.SS write\-ip = on|off
+.sp
+Report the client ip to the backend by writing IP before sending
+data.
+.sp
+This option is mutually exclusive with each of the options
+write\-proxy\-v2, write\-proxy\-v1 and proxy\-proxy.
+.sp
+Default is off.
+.SS write\-proxy\-v1 = on|off
+.sp
+Report client address using the PROXY protocol.
+.sp
+This option is mutually exclusive with option write\-proxy\-v2, write\-ip
+and proxy\-proxy.
+.sp
+Default is off.
+.SS write\-proxy\-v2 = on|off
+.sp
+Report client address using PROXY v2 protocol.
+.sp
+This option is mutually exclusive with option write\-ip, write\-proxy\-v1
+and proxy\-proxy.
+.sp
+Default is off.
+.SH EXAMPLE
+.\" example-start
+.
+.sp
+The following file shows the syntax needed to get started with:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+frontend = {
+    host = "*"
+    port = "443"
+}
+backend = "[127.0.0.1]:6086"    # 6086 is the default Varnish PROXY port.
+workers = 4                     # number of CPU cores
+
+daemon = on
+user = "nobody"
+group = "nogroup"
+
+# Enable to let clients negotiate HTTP/2 with ALPN. (default off)
+# alpn\-protos = "http/2, http/1.1"
+
+# run Varnish as backend over PROXY; varnishd \-a :80 \-a localhost:6086,PROXY ..
+write\-proxy\-v2 = on             # Write PROXY header
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.\" example-end
+.
+.SH AUTHOR
+.sp
+This manual was written by Pål Hermunn Johansen <\fI\%hermunn@varnish\-software.com\fP>
+.\" Generated by docutils manpage writer.
+.

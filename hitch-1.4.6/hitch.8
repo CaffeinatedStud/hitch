@@ -1,0 +1,232 @@
+.\" Man page generated from reStructuredText.
+.
+.TH HITCH 8 "" "" ""
+.SH NAME
+Hitch \- high performance TLS proxy
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH SYNOPSIS
+.sp
+hitch [OPTIONS] [PEM]
+.SH DESCRIPTION
+.sp
+Hitch is a network proxy that terminates TLS/SSL connections and forwards the
+unencrypted traffic to some backend. It\(aqs designed to handle 10s of thousands of
+connections efficiently on multicore machines.
+.sp
+Hitch has very few features \-\- it\(aqs designed to be paired with an intelligent
+backend like Varnish Cache. It maintains a strict 1:1 connection pattern
+with this backend handler so that the backend can dictate throttling behavior,
+maximum connection behavior, availability of service, etc.
+.sp
+The only required argument is a path to a PEM file that contains the certificate
+(or a chain of certificates) and private key. It should also contain
+DH parameter if you wish to use Diffie\-Hellman cipher suites.
+.SH COMMAND LINE ARGUMENTS
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.TP
+.BI \-\-config\fB= FILE
+Load configuration from specified file. See \fIhitch.conf(5)\fP for details.
+.TP
+.B \-\-tls
+All TLS versions, no SSLv3 (deprecated). See config file setting \fBtls\-protos\fP\&.
+.TP
+.B \-\-ssl
+enable SSLv3 (deprecated). See config file setting \fBtls\-protos\fP\&.
+.TP
+.B \-c
+.INDENT 7.0
+.TP
+.BI \-\-ciphers\fB= SUITE
+Sets allowed ciphers (Default: "")
+.UNINDENT
+.TP
+.B \-e
+.INDENT 7.0
+.TP
+.BI \-\-ssl\-engine\fB= NAME
+Sets OpenSSL engine (Default: "")
+.UNINDENT
+.TP
+.B \-O
+.INDENT 7.0
+.TP
+.B \-\-prefer\-server\-ciphers
+Prefer server list order
+.UNINDENT
+.TP
+.B \-\-client
+Enable client proxy mode
+.TP
+.B \-b
+\-\-backend=[HOST]:PORT     Backend [connect] (default is "[127.0.0.1]:8000")
+.TP
+.B \-f
+\-\-frontend=[HOST]:PORT[+CERT]     Frontend [bind] (default is "[*]:8443")
+(Note: brackets are mandatory in endpoint specifiers.)
+.TP
+.B \-n
+.INDENT 7.0
+.TP
+.BI \-\-workers\fB= NUM
+Number of worker processes (Default: 1)
+.UNINDENT
+.TP
+.B \-B
+.INDENT 7.0
+.TP
+.BI \-\-backlog\fB= NUM
+Set listen backlog size (Default: 100)
+.UNINDENT
+.TP
+.B \-k
+.INDENT 7.0
+.TP
+.BI \-\-keepalive\fB= SECS
+TCP keepalive on client socket (Default: 3600)
+.UNINDENT
+.TP
+.B \-r
+.INDENT 7.0
+.TP
+.BI \-\-chroot\fB= DIR
+Sets chroot directory (Default: "")
+.UNINDENT
+.TP
+.B \-u
+.INDENT 7.0
+.TP
+.BI \-\-user\fB= USER
+Set uid/gid after binding the socket (Default: "")
+.UNINDENT
+.TP
+.B \-g
+.INDENT 7.0
+.TP
+.BI \-\-group\fB= GROUP
+Set gid after binding the socket (Default: "")
+.UNINDENT
+.TP
+.B \-q
+.INDENT 7.0
+.TP
+.B \-\-quiet
+Be quiet; emit only error messages
+.UNINDENT
+.TP
+.B \-s
+.INDENT 7.0
+.TP
+.B \-\-syslog
+Send log message to syslog in addition to stderr/stdout
+.UNINDENT
+.TP
+.BI \-\-syslog\-facility\fB= FACILITY
+Syslog facility to use (Default: "daemon")
+.TP
+.B \-\-daemon
+Fork into background and become a daemon;
+this also sets the \-\-quiet option (Default: off)
+.TP
+.B \-\-write\-ip
+Write 1 octet with the IP family followed by the IP
+address in 4 (IPv4) or 16 (IPv6) octets little\-endian
+to backend before the actual data
+(Default: off)
+.TP
+.B \-\-write\-proxy\-v1
+Write HaProxy\(aqs PROXY v1 (IPv4 or IPv6) protocol line
+before actual data
+(Default: off)
+.TP
+.B \-\-write\-proxy\-v2
+Write HaProxy\(aqs PROXY v2 binary (IPv4 or IPv6)  protocol line
+before actual data
+(Default: off)
+.TP
+.B \-\-write\-proxy
+Equivalent to \-\-write\-proxy\-v2. For PROXY version 1 use
+\-\-write\-proxy\-v1 explicitly
+.TP
+.B \-\-proxy\-proxy
+Proxy HaProxy\(aqs PROXY (IPv4 or IPv6) protocol line
+before actual data (PROXY v1 only)
+(Default: off)
+.TP
+.BI \-\-alpn\-protos\fB= LIST
+Sets the protocols for ALPN/NPN negotiation, given by a comma
+separated list. If this is not set explicitly, ALPN/NPN will
+not be used. Requires OpenSSL 1.0.1 for NPN and OpenSSL 1.0.2
+for ALPN.
+.TP
+.B \-\-sni\-nomatch\-abort
+Abort handshake when client submits an unrecognized SNI server name
+(Default: off)
+.TP
+.BI \-\-ocsp\-dir\fB= DIR
+Set OCSP staple cache directory
+This enables automated retrieval and stapling of OCSP responses
+(Default: "")
+.TP
+.B \-t
+.INDENT 7.0
+.TP
+.B \-\-test
+Test configuration and exit
+.UNINDENT
+.TP
+.B \-p
+.INDENT 7.0
+.TP
+.BI \-\-pidfile\fB= FILE
+PID file
+.UNINDENT
+.TP
+.B \-V
+.INDENT 7.0
+.TP
+.B \-\-version
+Print program version and exit
+.UNINDENT
+.TP
+.B \-h
+.INDENT 7.0
+.TP
+.B \-\-help
+This help message
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SH HISTORY
+.sp
+Hitch was originally called stud and was written by Jamie Turner at Bump.com.
+.\" Generated by docutils manpage writer.
+.
